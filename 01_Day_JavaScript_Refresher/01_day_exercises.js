@@ -43,10 +43,10 @@ shoppingCart.splice(shoppingCart.indexOf('Tea'),1,"Green Tea")
   
 4.In countries array check if 'Ethiopia' exists in the array if it exists print 'ETHIOPIA'. If it does not exist add to the countries list.*/
 
-countries.indexOf('Ethiopia') > -1
+/* countries.indexOf('Ethiopia') > -1
   ? console.log('ETHIOPIA')
   : countries.push('Ethiopia')
-
+ */
 
 /*In the webTechs array check if Sass exists in the array and if it exists print 'Sass is a CSS preprocess'. If it does not exist add Sass to the array and print the array.
 
@@ -57,3 +57,18 @@ const backEnd = ['Node', 'Express', 'MongoDB']
 
 console.log(fullStack)
 ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]*/
+
+
+//Exercises Level 3
+
+const ages = [19, 22, 19, 28, 20, 25, 26, 24, 25, 25] 
+
+ages.sort()
+
+let minMax= "Min: " + ages[0] + " Max: " + ages[ages.length-1]
+
+let mid = (ages.length%2 == 0) 
+  ? (ages[ages.length/2] + ages[(ages.length/2)-1]) / 2
+  : ages[(ages.length-1)/2]
+
+let ave = 
